@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<body>
+<script>
+    var multiplicationtable = alert("\r" + "Hello, Welcome to the multiplication table! / Здравствуйте,Вас приветствует таблица умножения!", "");
+    var cols = prompt("\r" + "Enter the number of columns / Введите количество столбцов.", "");
+    var rows = prompt("\r" + "Enter the number of lines / Введите количество строк.", "");
+    cols = parseInt(cols);
+    rows = parseInt(rows);
+    if (cols<1 || rows <1) {
+        multiplicationtable = 1;
+        cols = 1;
+        rows = 1;
+    }
+        document.write('<table border=1, cellpadding=1, cellspacing=0, width="19%">');
+    for (i = 1; i <= cols; i++)
+    {
+        document.write("<tr>");
+        for (k = 1; k <= rows; k++)
+        {
+            if (k == 1) {
+                document.write('<td style="background-color:blanchedalmond">');
+                document.write(i);
+            }
+            else
+            if (i == 1) {
+                document.write('<td style="background-color:blanchedalmond">');
+                document.write(k);
+            }
+            else {
+                document.write('<td style="background-color:gold">');
+                document.write(i * k);
+            }
+            document.write("</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script>
+</body>
