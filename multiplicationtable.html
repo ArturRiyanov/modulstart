@@ -6,8 +6,8 @@
     var rows = prompt("\r" + "Enter the number of lines / Введите количество строк.", "");
     cols = parseInt(cols);
     rows = parseInt(rows);
-    if (cols<1 || rows<1) {
-        multiplicationtable = 1;
+    if (cols<0 || rows<0) {
+        multiplicationtable = 0;
         cols = 0;
         rows = 0;
     }
