@@ -6,23 +6,23 @@
     var rows = prompt("\r" + "Enter the number of lines / Введите количество строк.", "");
     cols = parseInt(cols);
     rows = parseInt(rows);
-    if (cols<1 || rows <1) {
+    if (cols<1 || rows<1) {
         multiplicationtable = 1;
-        cols = 1;
-        rows = 1;
+        cols = 0;
+        rows = 0;
     }
         document.write('<table border=1, cellpadding=1, cellspacing=0, width="19%">');
-    for (i = 1; i <= cols; i++)
+    for (i = 0; i <= cols; i++)
     {
         document.write("<tr>");
-        for (k = 1; k <= rows; k++)
+        for (k = 0; k <= rows; k++)
         {
-            if (k == 1) {
+            if (k == 0) {
                 document.write('<td style="background-color:blanchedalmond">');
                 document.write(i);
             }
             else
-            if (i == 1) {
+            if (i == 0) {
                 document.write('<td style="background-color:blanchedalmond">');
                 document.write(k);
             }
